@@ -1,0 +1,335 @@
+#main-wrapper {
+  min-height: 100%;
+  height: auto;
+  margin: -146px auto -149px;
+  padding: 249px 0 150px;
+}
+
+.lawyer-item {
+  font-size: 0;
+  padding: 20px 15px 20px 15px;
+  box-sizing: border-box;
+  line-height: 18px;
+  a:hover, a:focus {
+    text-decoration: underline;
+  }
+  .info-block {
+    width: 37%;
+    margin-right: 5%;
+    text-align: left;
+    .lawyer-photo {
+      width: 31%;
+      margin-right: 9%;
+      display: inline-block;
+      vertical-align: top;
+      IMG {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+      }
+    }
+    .lawyer-personal-data {
+      width: 60%;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 12px;
+      .lawyer-name {
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 18px;
+        margin-bottom: 1px;
+        font-family: "Avenir Next Pro Demi","Helvetica Neue",Helvetica,Arial,sans-serif;
+        A {
+          color: #222;
+          border-bottom: 1px solid transparent;
+          text-decoration: none;
+        }
+      }
+      .lawyer-title {
+        text-transform: uppercase;
+      }
+      .lawyer-mail {
+        margin: 0;
+        A {
+          color: #f57b20;
+        }
+      }
+      .lawyer-card-social-links{
+        .card-text {
+          font-size: 12px;
+          color: #f57b20;
+          padding: 0 0 0 23px;
+          position: relative;
+        }
+        .card-text, .ln-link, .tw-link {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 0;
+          margin: 0 3px 0 0;
+        }
+        .related-offices UL {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          LI:last-child {
+            margin-bottom: 0;
+          }
+          LI {
+            padding: 0;
+            margin: 0 0 3px 0;
+            SPAN {
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+  .text-block {
+    width: 27%;
+    margin: 0 40px 0 0;
+  }
+  .practices-block {
+    width: 26%;
+  }
+  .info-block, .text-block, .practices-block {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    span {
+      font-family: "Avenir Next Pro Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
+    }
+    A {
+      color: #222;
+    }
+  }
+}
+.tab_content{
+  .lawyer-item {
+    .info-block {
+      width: 37%;
+      margin-right: 1%;
+    }
+    .text-block {
+      width: 27%;
+      margin: 0 40px 0 0;
+    }
+    .practices-block {
+      width: 26%;
+    }
+  }
+}
+.people-search-form{
+  position: relative;
+  margin-bottom: 20px;
+  .filter-by{
+    display: block;
+    float: left;
+    width: 158px;
+    font-family: "Avenir Next Pro Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    padding: 8px 0 0 8px;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  .filters{
+    position: relative;
+    width: 761px;
+    height: 78px;
+    margin-left: 158px;
+    border: 1px solid #1f2123;
+    .single-filter{
+      width: 25%;
+      display: block;
+      position: relative;
+      float: left;
+      padding: 0;
+      margin: 0;
+      background-color: #f5f5f5;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+      .filter-btn{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 38px;
+        font-size: 16px;
+        line-height: 38px;
+        text-transform: uppercase;
+        padding: 0 13px;
+        box-sizing: border-box;
+        margin: 0;
+        cursor: pointer;
+        border-style: solid;
+        border-color: #a7a9ac;
+        border-width: 1px 0 0 1px;
+      }
+      .filter_container{
+        display:none;
+        background-color: #fff;
+        border: 0;
+        position: absolute;
+        padding: 5px;
+        min-width: 290px;
+        box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
+        z-index: 4;
+        .filter-apply-btn{
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          border: 0;
+          border-radius: 0;
+          text-align: center;
+          font-family: "Avenir Next Pro Demi","Helvetica Neue",Helvetica,Arial,sans-serif;
+          font-size: 12px;
+          height: 35px;
+          line-height: 35px;
+          text-transform: uppercase;
+        }
+        .filter-apply-btn.choose{
+          color: #555;
+          background: transparent;
+        }
+
+        .filter-apply-btn.apply{
+          background-color: #f4a36d;
+          cursor: pointer;
+          color: #000;
+        }
+        .filter-apply-btn.apply::after{
+          content: '';
+          position: absolute;
+          background-image: url('../images/icon-s09352711e8.png');
+          background-position: 0 -40px;
+          background-repeat: no-repeat;
+          background-color: transparent;
+          height: 16px;
+          width: 16px;
+          top: 9px;
+          left: 50%;
+          margin-left: 48px;
+          z-index: 0;
+        }
+        .filter-values{
+          position: relative;
+          padding: 0 10px 0 10px;
+          margin: 15px 0;
+        }
+        .filter-values.a_z{
+          .form-item-checkbox{
+            display: inline-block;
+            position: relative;
+            vertical-align: top;
+            font-size: 14px;
+            margin: 0 5.5px 5.5px 0;
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            text-align: center;
+            background: #f57b20;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: normal;
+            cursor: pointer;
+            i{
+              position:absolute;
+              display:none;
+              background-image: url('../images/icon-s09352711e8.png');
+              background-position: 0 -890px;
+              background-repeat: no-repeat;
+              background-color: transparent;
+              height: 14px;
+              width: 15px;
+              top: 5px;
+              left: 4px;
+            }
+          }
+          .form-item-checkbox.remove{
+            background: #ffffff;
+            i{
+              display:block;
+            }
+          }
+        }
+
+        .filter-values.title, .office.filter-values, .spoken_languages.filter-values, .practice.filter-values, .industry.filter-values, .region.filter-values, .school.filter-values{
+          .form-item-checkbox{
+            position: relative;
+            min-height: 24px;
+            padding-left: 20px;
+            margin-bottom: 0;
+            font-weight: normal;
+            cursor: pointer;
+            i{
+              background: #fff;
+              width: 12px;
+              height: 12px;
+              display: block;
+              position: absolute;
+              left: 0;
+              top: 6px;
+              box-sizing: border-box;
+              border: 1px solid #848588;
+            }
+          }
+          .form-item-checkbox.remove{
+            background: #ffffff;
+            i{
+              background-image: url('../images/icon-s09352711e8.png');
+              background-position: 0 -890px;
+              background-repeat: no-repeat;
+              background-color: transparent;
+              height: 14px;
+              width: 15px;
+              position:absolute;
+              top: 5px;
+              left: 0px;
+              border:0px;
+            }
+          }
+        }
+      }
+    }
+    .single-filter.active{
+      .filter_container{
+        display:block;
+      }
+    }
+  }
+  .filters_deselect{
+    margin-top: 20px;
+    border-top: 2px solid #1f2123;
+    padding-top:10px;
+    .res_title{
+      font-size: 16px;
+      font-family: "Avenir Next Pro Demi","Helvetica Neue",Helvetica,Arial,sans-serif;
+      margin-left: 0;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .filter-deselect{
+      display: inline-block;
+      .deselect_filter{
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+        padding-left:20px;
+        i {
+          background-image: url(../images/icon-s09352711e8.png);
+          background-position: 0 -890px;
+          background-repeat: no-repeat;
+          background-color: transparent;
+          height: 14px;
+          width: 15px;
+          position: absolute;
+          top: 5px;
+          left: 0px;
+          border: 0px;
+        }
+      }
+    }
+
+  }
+}

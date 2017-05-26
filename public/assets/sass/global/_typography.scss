@@ -1,0 +1,30 @@
+// Typography
+// --------------------------------------------------
+A {
+  @include transition(color $t-150, border-color $t-150,  opacity $t-150);
+  text-decoration: none;
+  
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    outline: none;
+  }
+  &[href='mailto:*'] {
+    color: $brand-primary!important;
+  }
+}
+
+UL, OL {
+  padding: 0 0 0 17px;
+    
+    LI {
+      margin: 0 0 5px 0; 
+      
+      UL {
+        LI {
+          list-style: disc;
+        }
+      }
+    } 
+}

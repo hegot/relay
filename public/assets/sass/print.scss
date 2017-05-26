@@ -1,0 +1,18 @@
+// @file
+// Print Styles
+// --------------------------------------------------
+
+.logo-print {
+  clear:both;
+  float:right;
+  width:30%;
+}
+.page-header {
+  .field-name-field-event-type .field-item {
+    color: #62B92C !important;
+  }
+  .field-name-field-publication-type .field-item {
+    color: #B91893 !important;
+  }
+}
+

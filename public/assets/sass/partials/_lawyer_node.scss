@@ -1,0 +1,170 @@
+.lawyer_node{
+  .col-md-9{
+    padding:0px;
+  }
+  .lawyer_photo{
+    img{
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+    }
+  }
+  .lawyer_top_center{
+    .title{
+      margin-bottom: 47px;
+      font: normal 41px "Avenir Next Pro Demi","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 33px;
+      color: #f57b20;
+    }
+    .lawyer_title{
+      text-transform: uppercase;
+      font-size: 18px;
+      margin: 0 0 10px 0;
+    }
+    .lawyer_email{
+      line-height: 18px;
+      a{
+        color: #f57b20;
+        text-decoration: none;
+      }
+    }
+    .address-row{
+      margin: 16px 0 0 0;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 12px;
+      line-height: 16px;
+      .office-name{
+        font-family: "Avenir Next Pro Demi","Helvetica Neue",Helvetica,Arial,sans-serif;
+        white-space: nowrap;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      .phone{
+        white-space: nowrap;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+  .col-md-3{
+    .lawyer_top_tabs{
+      padding-top:150px;
+      .lawyer_top_tab{
+        margin-bottom: 4px;
+        position:relative;
+        width:100%;
+        clear:both;
+        float:left;
+        label {
+          display:block;
+          color: black;
+          border-bottom: 1px solid #222;
+          text-decoration: none;
+          cursor: pointer;
+          font-size: 11px;
+          float:left;
+          font-family: Arial;
+        }
+        .lawyer_top_tab_hide{
+          position:absolute;
+          top:100%;
+          left:0px;
+          background: #ffffff;
+          border: 1px solid #e2e2e2;
+          padding:5px 10px;
+          display:none;
+          z-index:1;
+          .field--item{
+            float:left;
+            margin-right:5px;
+          }
+        }
+      }
+      .lawyer_top_tab:hover{
+        .lawyer_top_tab_hide{
+          display:block;
+        }
+      }
+    }
+  }
+
+
+  .lawyer_related_data{
+    padding-top: 70px;
+    .related_data_row{
+      border: 1px solid #e2e2e2;
+      padding: 0 0 5px 0;
+      margin: 0 0 20px 0;
+
+      h3{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: "Avenir Next Pro Demi","Helvetica Neue",Helvetica,Arial,sans-serif;
+        background: #f1f1f1;
+        padding: 12px;
+        margin: 0 0 2px 0;
+        display: block;
+      }
+      ul{
+        margin: 0;
+        padding: 0;
+        list-style:none;
+        li{
+          list-style:none;
+          padding: 0 12px;
+          margin: 0 0 7px 0;
+          line-height: 20px;
+          a{
+            font-family: "Avenir Next Pro Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+            color: #222;
+            border-bottom: 1px solid #222;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .lawyer_description{
+    .tabs{
+      margin_top:20px;
+      position:relative;
+      .line{
+        border-bottom: 3px solid #f57b20;
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        width: 135%;
+      }
+      .single-tab{
+        .tab_content{
+          display:none;
+          position:absolute;
+          top:50px;
+          left:10px;
+          color: rgb(51, 51, 51);
+          font-family: "Avenir Next Pro Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+          font-size: 15px;
+        }
+        .tab_header{
+          float:left;
+          margin: 0 5% 0 0;
+          text-transform: uppercase;
+          padding: 0;
+          font-size: 16px;
+          color: #848588;
+          margin-right: 45px;
+          cursor:pointer;
+        }
+      }
+      .single-tab.active{
+        .tab_content{
+          display:block;
+
+        }
+      }
+    }
+  }
+}

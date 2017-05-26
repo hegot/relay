@@ -1,0 +1,55 @@
+#main-wrapper {
+  min-height: 100%;
+  height: auto;
+  margin: -146px auto -149px;
+  padding: 249px 0 150px;
+  .container {
+    @include min-screen(768px) {
+      width: 750px;
+    }
+    @include min-screen(992px) {
+      width: 880px;
+    }
+    @include min-screen(1200px) {
+      width: 950px;
+    }
+  }
+}
+
+h1, .h1 {
+  font-size: 39px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Avenir Next Pro Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.62857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+}
+

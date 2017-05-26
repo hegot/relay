@@ -1,0 +1,300 @@
+#header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: background 300ms;
+  -o-transition: background 300ms;
+  transition: background 300ms;
+  .container{
+    width:1080px;
+  }
+  .navbar.navbar-head {
+    padding: 20px 0 8px 0;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    -webkit-transition: padding 300ms;
+    -o-transition: padding 300ms;
+    transition: padding 300ms;
+    background:white;
+    A.nav-active-category-item {
+      font-family: "Avenir Next Pro Demi","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+      color: #222 !important;
+    }
+    .navbar-header {
+      float: left;
+      .navbar-logo {
+        padding: 0;
+        font-size: 0;
+        display: block;
+        position: relative;
+        -webkit-transition: transform 300ms,margin 300ms;
+        -o-transition: transform 300ms,margin 300ms;
+        transition: transform 300ms,margin 300ms;
+      }
+      .navbar-logo::before {
+        content: '';
+        position: absolute;
+        background-image: url('../images/logoreact.png');
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height: 56px;
+        width: 226px;
+        opacity: 1;
+      }
+      .navbar-logo::after {
+        content: '';
+        position: absolute;
+        background-image: url('../images/icon-s09352711e8.png');
+        background-position: 0 -1906px;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height: 56px;
+        width: 226px;
+        opacity: 0;
+      }
+      .navbar-logo::before, .navbar-logo::after {
+        top: 0;
+        left: 0;
+        -webkit-transition: opacity 300ms;
+        -o-transition: opacity 300ms;
+        transition: opacity 300ms;
+      }
+    }
+    .navbar-collapse.collapse {
+      display: block !important;
+      height: auto !important;
+      padding-bottom: 0;
+      overflow: visible !important;
+
+      .form-control {
+        border-radius: 0;
+        font-size: 12px;
+        height: 33px;
+        border-color: #222;
+        padding: 6px 32px 4px 10px !important;
+      }
+      #main-menu.navbar-right {
+        margin-right: 59px;
+        padding: 18px 0 0 0;
+        box-sizing: border-box;
+        > LI.leaf {
+          padding: 0 18px;
+          position:relative;
+          A.nolink {
+            cursor: default;
+          }
+           > .main_link {
+            padding: 18px 10px 10px 10px;
+            font-size: 17px;
+            color: #848588;
+            text-transform: uppercase;
+            text-shadow: none;
+            position: relative;
+            cursor: pointer;
+            -webkit-transition: color 300ms,box-shadow 300ms,background 300ms;
+            -o-transition: color 300ms,box-shadow 300ms,background 300ms;
+            transition: color 300ms,box-shadow 300ms,background 300ms;
+          }
+          > A:hover, A._nav-hover {
+            background: #fff;
+            box-shadow: 0px 10px 10px rgba(0,0,0,0.35);
+            color: #222222 !important;
+          }
+          > A::before {
+            width: 100%;
+            height: 2px;
+            left: 0;
+            content: '';
+            position: absolute;
+            background: #f57b20;
+            top: 0;
+            opacity: 0;
+            -webkit-transition: opacity 300ms;
+            -o-transition: opacity 300ms;
+            transition: opacity 300ms;
+          }
+          .tab-services{
+            display:none;
+            position:absolute;
+            top:52px;
+            left:18px;
+            height: 280px;
+            width: 325px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 10px 10px rgba(0,0,0,0.35);
+          }
+          .tab-people {
+            display: none;
+            position: absolute;
+            top: 52px;
+            left: 18px;
+            height: 280px;
+            width: 525px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.35);
+          }
+          .tab-services, .tab-people {
+            .form-item-s{
+              color: #000;
+              position: relative;
+              margin-bottom: 15px;
+              margin-top: 0;
+              width: 100%;
+              .twitter-typeahead{
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                .people_search{
+                  position: relative;
+                  vertical-align: top;
+                  background-color: transparent;
+                  box-shadow: none;
+                  border-radius: 0;
+                  font-size: 12px;
+                  height: 33px;
+                  border-color: #222;
+                  padding: 6px 32px 4px 10px !important;
+                  outline: 0;
+                  width: 100%;
+                }
+              }
+            }
+            .row-2 {
+              > DIV {
+                font-size: 14px;
+                display: inline-block;
+                vertical-align: top;
+                width: 20%;
+                margin-right: 5%;
+              }
+              .filter-az-cnt{
+                ul,li{
+                  list-style:none;
+                  padding:0px;
+                  margin:0px;
+                }
+                .form-wrapper A {
+                  display: inline-block;
+                  vertical-align: top;
+                  font-size: 14px;
+                  margin: 0 5px 5px 0;
+                  width: 24px;
+                  height: 24px;
+                  padding: 2px 0;
+                  text-align: center;
+                  background: #f57b20;
+                  text-transform: uppercase;
+                  color: #fff;
+                }
+              }
+              .filter-types-cnt{
+                ul{
+                  list-style:none;
+                  position:relative;
+                }
+                li{
+                  padding-bottom: 9px;
+                  A {
+                    display: block;
+                    font: 12px/15px "Avenir Next Pro Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+                  }
+                  .filter{
+                    display:none;
+                    position:absolute;
+                    top:0px;
+                    left:85px;
+                    height:200px;
+                    overflow-y:auto;
+                    width:200px;
+                    A{
+                      display: block;
+                      font: 12px/15px "Avenir Next Pro Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+                      margin-bottom: 9px;
+                      color: #222;
+                    }
+                  }
+                }
+                li:hover{
+                  .filter{
+                    display:block
+                  }
+                }
+              }
+            }
+            .row-2 > DIV:first-child {
+              width: 30%;
+            }
+
+          }
+        }
+        LI:hover {
+          .tab-people, .tab-services{
+            display:block;
+          }
+        }
+      }
+
+
+
+
+
+
+      #secondary-menu {
+        position: absolute;
+        text-align: right;
+        margin: 0;
+        right: 2px;
+        top: 15px;
+        opacity: 1;
+        visibility: visible;
+        -webkit-transition: opacity 300ms,visibility 300ms;
+        -o-transition: opacity 300ms,visibility 300ms;
+        transition: opacity 300ms,visibility 300ms;
+      }
+      #secondary-menu > LI {
+        position: relative;
+        line-height: 21px;
+        margin: 0;
+      }
+      #secondary-menu > LI > A {
+        position: relative;
+        display: inline-block;
+        padding: 0;
+        font-size: 11px;
+        line-height: 16px;
+        color: #848588;
+        text-align: right;
+        text-transform: uppercase;
+        -webkit-transition: background 300ms;
+        -o-transition: background 300ms;
+        transition: background 300ms;
+      }
+      #secondary-menu > LI > A::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background: #f57b20;
+        left: -10px;
+        top: 0;
+        opacity: 0;
+        -webkit-transition: opacity 300ms;
+        -o-transition: opacity 300ms;
+        transition: opacity 300ms;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  float: left;
+  padding: 13px 15px;
+  font-size: 19px;
+  line-height: 24px;
+  height: 50px;
+}

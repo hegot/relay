@@ -1,0 +1,61 @@
+// //  sprites with padding
+// $general: sprite-map("icon/*.png", $spacing: 10px, $layout: smart)
+
+// // sized sprites
+// =image-size($path)
+//     width: image-width($path)
+//     height: image-height($path)
+
+// =sized-sprite($map, $sprite)
+//     background: sprite($map, $sprite) no-repeat
+//     @include image-size(sprite-file($map, $sprite))
+
+// //shortcut
+// =s($sprite, $map: $general)
+//     background: sprite($map, $sprite) no-repeat
+//     //background-image: inline-image('icons/'+$sprite+'.png','image/png'); to switches sprites to base64, elegant
+//     @include image-size(sprite-file($map, $sprite))
+
+// //only image, when dimensions are useless
+// =si($sprite, $map: $general)
+//     background: sprite($map, $sprite) no-repeat
+
+// // Shortcuts for pseudo elements
+
+// @mixin ps($name)
+//     content: ''
+//     position: absolute
+//     @include s($name)
+    
+
+$sprites: sprite-map("icon/*.png", $spacing: 10px);
+$sprites-retina: sprite-map("icon-2x/*.png", $spacing: 10px);
+
+@mixin s($name) {
+  background-image: sprite-url($sprites);
+  background-position: sprite-position($sprites, $name);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: image-height(sprite-file($sprites, $name));
+  width: image-width(sprite-file($sprites, $name));
+  BODY.ie & {
+    height: image-height(sprite-file($sprites, $name)) + 1;
+    width: image-width(sprite-file($sprites, $name)) + 1;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2) {
+    // Workaround for https://gist.github.com/2140082
+    @if (sprite-position($sprites, $name) != sprite-position($sprites-retina, $name)) {
+      $ypos: round(nth(sprite-position($sprites-retina, $name), 2) / 2);
+      background-position: 0 $ypos;
+    }
+    // Hard coded width of the normal sprite image. There must be a smarter way to do this.
+    @include background-size(226px auto);
+    background-image: sprite-url($sprites-retina);
+  }
+}
+
+@mixin ps($name) {
+    content: '';
+    position: absolute;
+    @include s($name);
+}
